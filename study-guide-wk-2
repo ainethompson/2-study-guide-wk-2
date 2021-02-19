@@ -4,11 +4,13 @@ Using Git with GitHub
 
 Lists
 - Give an example of when you would use a list
+    use a list if you need to keep track of things in a specific order but still be able to modify it.
 
 - How do you index into a list?
+    to find nth item --> list[n-1]
 
 - How does Python’s slice syntax work?
-
+    [start:stop:step]
 - For each of the code blocks below, see if you can figure out what the final value of fruits will be without having to actually run the code:
 
     >>> fruits = ['watermelon', 'apple', 'orange']
@@ -47,12 +49,17 @@ ordered
 Memory
 
 - The way variables work in Python is different from how variables work in older languages like C. How do Python variables differ from “classic” variables?
+    In older languages, variables represent a fixed location in memory. If the value changes, the variable still points to the same place.
+    In python, variables are just pointers to different values. If the value changes, the pointer moves to a new location where the new value is stored.
 
 - Draw boxes and arrows to explain what happens when you reassign a variable in Python
+    The pointer with the variable name moves to point to a new location in memory where the new value is stored. The old value stays at it's location until the garbage collector comes.
 
 - Draw boxes and arrows to explain what happens when you append an item to a list
+    The item will fill in the space directly after the last item. The list is modified in place.
 
 - What does the id function do in Python? How is it related to Python’s is comparator?
+    The id function returns the location in memory. when you compare 2 things with A is B, it checks if they are both stored at the same location, rather than if they have the same value.
 
 Terms & Definitions
 
