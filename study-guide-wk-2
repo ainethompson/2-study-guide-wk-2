@@ -1,0 +1,118 @@
+Study Guide: Week 2
+
+Using Git with GitHub
+
+Lists
+- Give an example of when you would use a list
+
+- How do you index into a list?
+
+- How does Python’s slice syntax work?
+
+- For each of the code blocks below, see if you can figure out what the final value of fruits will be without having to actually run the code:
+
+    >>> fruits = ['watermelon', 'apple', 'orange']
+    >>> sorted(fruits)
+        ['watermelon', 'apple', 'orange']
+
+    >>> fruits = ['acorn', 'coconut', 'banana']
+    >>> fruits.sort()
+        ['acorn', 'banana', 'coconut']
+
+    >>> fruits = ['banana', 'kiwi']
+    >>> fruits.append('mango')
+        ['banana', 'kiwi', 'mango']
+
+    >>> fruits = ['grapefruit', 'tangerine', 'lemon']
+    >>> fruits.extend('cucumber')
+        ['grapefruit', 'tangerine', 'lemon', 'c', 'u', 'c', 'u', 'm', 'b', 'e', 'r']
+
+    >>> fruits = ['tomato']
+    >>> fruits.extend(['avocado', 'raspberry'])
+        ['tomato', 'avocado', 'raspberry']
+
+Terms & Definitions
+iterable
+    In Python, iterable data types are ones that can be looped over with the for… in… syntax
+
+mutable
+    An adjective used to describe data types that can change in place. For example, you can change a list in place by appending items to it.
+
+immutable
+    The opposite of mutable. Immutable data types can’t change in place. For example, when you concatentate two strings together ('hello' + 's'), Python creates a brand new string ('hellos').
+
+ordered
+    Ordered data types are ones that store their items in sequence. In Python, ordered data types are also described as sequences. All sequences support syntax like indexing and slicing. For example, you can slice strings and lists in Python.
+
+Memory
+
+- The way variables work in Python is different from how variables work in older languages like C. How do Python variables differ from “classic” variables?
+
+- Draw boxes and arrows to explain what happens when you reassign a variable in Python
+
+- Draw boxes and arrows to explain what happens when you append an item to a list
+
+- What does the id function do in Python? How is it related to Python’s is comparator?
+
+Terms & Definitions
+
+garbage collection algorithm
+    In computer science, garbage collection refers to an algorithm responsible for releasing values from memory. This can happen while the program is running to clear memory that a program isn’t using, or before the program halts to clean up memory.
+
+Sets & Tuples
+
+- Are tuples mutable or immutable? Ordered or unordered?
+    immutable and ordered
+
+- Are sets mutable or immutable? Ordered or unordered?
+    mutable and unordered
+
+- Give an example of when you’d use a tuple
+    Statistics about a race (time to finish, winner’s name, date)
+
+- Give an example of when you’d use a set
+    Hackbright house names
+
+- For each of the code blocks below, see if you can figure out what the final value of user_info will be without having to actually run the code:
+
+    >>> user_info = ('Jo', 'jo@gmail.com')
+    >>> user_info[-1]
+        returns jo@gmail.com
+        value of user_info = ('Jo', 'jo@gmail.com')
+
+    >>> user_info = ('Jo', 'jo@gmail.com')
+    >>> user_info + ('An awesome person turned developer.',)
+        returns ('Jo', 'jo@gmail.com', 'An awesome person turned developer.')
+        value of user_info = ('Jo', 'jo@gmail.com')
+        
+    >>> user_info = ('Jo', 'jo@gmail.com')
+    >>> user_info += ('An awesome person turned developer.',)
+        returns error
+        value of user_info = ('Jo', 'jo@gmail.com')
+
+- For each of the code blocks below, see if you can figure out what the final value of langs will be without having to actually run the code:
+
+    >>> langs = set(['python', 'ruby', 'javascript'])
+    >>> langs.add('bash')
+        {'python', 'ruby', 'javascript', 'bash'}
+
+    >>> langs = set(['python', 'ruby', 'javascript'])
+    >>> len(langs)
+        3
+
+    >>> langs = set(['python', 'ruby', 'javascript'])
+    >>> langs.remove('ruby')
+        {'python', 'javascript'}
+
+- After running the following lines of code, what will be the value of result?
+
+    >>> user_info = ('Jo', 'jo@gmail.com')
+    >>> result = 'Jo' in user_info
+        True
+
+- After running the following lines of code, what will be the value of result?
+
+    >>> langs = set(['python', 'bash', 'css'])
+    >>> result = 'sql' in langs
+        False
+© 2020 Hackbright Academy
